@@ -50,6 +50,13 @@ int main()
 	printf ("\nDeletion successful.\n");
 	printf ("\nNew list:\n");
 	displayFunc();
+
+	free(head);
+	free(tail);
+	free(temp);
+	free(newNode);
+
+	head=tail=temp=newNode=NULL;
 	
 	return 0;
 }

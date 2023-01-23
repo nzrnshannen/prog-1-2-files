@@ -51,6 +51,12 @@ int main()
 	printf ("\nNew list:\n");
 	displayFunc();
 	
+	free(head);
+	free(temp);
+	free(newNode);
+	free(tail);
+	
+	head=temp=newNode=tail=NULL;
 	return 0;
 }
 

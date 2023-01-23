@@ -52,6 +52,13 @@ int main()
 	
 	printf ("\n\nThe maximum number in the list: %d\n", max);
 	
+	free(head);
+	free(temp);
+	free(newNode);
+	free(tail);
+
+	head=temp=newNode=tail=NULL;
+	
 	return 0;
 }
 

@@ -40,6 +40,15 @@ int main()
 	
 	printf ("\nData entered on the list are: \n");
 	displayFunc();
+
+	free(head);
+	free(temp);
+	free(newNode);
+	free(tail);
+
+	head=temp=newNode=tail=NULL;
+
+	return 0;
 }
 
 void displayFunc()

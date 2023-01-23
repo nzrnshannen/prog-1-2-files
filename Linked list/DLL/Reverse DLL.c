@@ -50,6 +50,18 @@ int main()
 	printf ("\nReverse operation successfully done.\n\n");
 	printf ("\nNew list:\n");
 	displayFunc();
+
+	free(head);
+	free(tail);
+	free(temp);
+	free(newNode);
+	free(currentNode);
+	free(nextNode);
+	free(prevNode);
+
+	head=tail=temp=newNode=currentNode=nextNode=prevNode=NULL;
+
+	return 0;
 }
 
 void displayFunc()

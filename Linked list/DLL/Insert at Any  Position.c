@@ -52,6 +52,15 @@ int main()
 	printf ("\nInsertion successfully done.\n");
 	printf ("New list:\n");
 	displayFunc();
+
+	free(head);
+	free(temp);
+	free(tail);
+	free(newNode);
+
+	head=temp=newNode=tail=NULL;
+
+	return 0;
 }
 
 void displayFunc()
