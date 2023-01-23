@@ -69,6 +69,14 @@ int main()
 	deleteAtPos(pos);
 	displayFunc();
 	
+	free(head);
+	free(temp);
+	free(newNode);
+	free(currentNode);
+	free(nextNode);
+
+	head=temp=newNode=currentNode=nextNode=NULL;
+	
 	return 0;
 }
 

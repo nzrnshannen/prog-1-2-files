@@ -75,5 +75,14 @@ int main()
 		temp = temp->address;
 	}
 	
-	
+	free(head);
+	free(temp);
+	free(newNode);
+	free(nextNode);
+	free(prevNode);
+	free(currentNode);
+
+	head=temp=newNode=nextNode=prevNode=currentNode=NULL;
+
+	return 0;
 }
